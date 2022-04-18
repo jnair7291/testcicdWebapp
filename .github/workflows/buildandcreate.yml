@@ -18,7 +18,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.2
      
     - name: Restore NuGet Packages
-      run: nuget restore SimpleFrameworkApp.sln
+      run: nuget restore mvcnetwebapp.sln
  
     - name: Build and Publish Web App
       run: msbuild mvcnetwebapp.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=bin\Release\Publish
